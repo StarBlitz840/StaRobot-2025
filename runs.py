@@ -15,23 +15,15 @@ WHITE = 42
 TARGET = 23
 
 hub = PrimeHub()
-# arm_right = Motor(Port.F)
-# arm_left = Motor(Port.B)
-# wheel_right = Motor(Port.D)
-# wheel_left = Motor(Port.A, Direction.COUNTERCLOCKWISE)
-# back_sensor = ColorSensor(Port.E)
-# front_sensor = ColorSensor(Port.C)
-# chassis = DriveBase(wheel_left, wheel_right, 62.4, 100)
-arm_right = Motor(Port.C)
+arm_right = Motor(Port.F)
 arm_left = Motor(Port.B)
-wheel_right = Motor(Port.E)
-wheel_left = Motor(Port.D, Direction.COUNTERCLOCKWISE)
-back_sensor = ColorSensor(Port.F)
-front_sensor = ColorSensor(Port.A)
+wheel_right = Motor(Port.D)
+wheel_left = Motor(Port.A, Direction.COUNTERCLOCKWISE)
+back_sensor = ColorSensor(Port.E)
+front_sensor = ColorSensor(Port.C)
 chassis = DriveBase(wheel_left, wheel_right, 62.4, 100)
 chassis.use_gyro(True)
-hub.imu.reset_heading(0)
-chassis.settings(straight_speed=250,turn_rate=100)
+
 
 # vars
 colors = (
@@ -44,4 +36,38 @@ colors = (
     Color.NONE,
 )
 
-arm_right.run_time(120, 3000)
+
+def run_1():
+    chassis.settings(250)
+    chassis.straight(500)
+    
+def run_2():
+    pass
+
+def run_3():
+    pass
+
+def run_4():
+    pass
+
+def run_5():
+    pass
+def run_9():
+    pass
+
+
+selected = hub_menu("1", "2", "3", "4", "5", "9")
+
+
+if selected == "1":
+    run_1()
+elif selected == "2":
+    run_2()
+elif selected == "3":
+    run_3()
+elif selected == "4":
+    run_4()
+elif selected == "5":
+    run_5()
+elif selected == "9":
+    run_9()
