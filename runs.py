@@ -37,12 +37,34 @@ colors = (
 )
 
 
+
 def run_1():
-    chassis.settings(250)
-    chassis.straight(500)
-    
+    arm_left.run_angle(250, 95, wait=False)
+    arm_right.run_angle(250, -95)
+    chassis.settings(350)
+    chassis.straight(525)
+    arm_right.run_angle(250, 120, wait=False)
+    arm_left.run_angle(250, -120)
+    chassis.settings(600)
+    chassis.straight(-600)
+
 def run_2():
-    pass
+     chassis.settings(403)
+     chassis.straight(200)
+     chassis.turn(45)
+     chassis.straight(350)
+     chassis.turn(-45)
+     chassis.straight(230)
+     chassis.turn(-87)
+     chassis.straight(72)
+     arm_right.run_angle(400, -510)
+     chassis.straight(-76)
+     chassis.turn(40)
+     chassis.settings(607,1023)
+     chassis.straight(207)
+
+
+
 
 def run_3():
     pass
