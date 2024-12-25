@@ -57,22 +57,18 @@ def run_1():
 
 
 
-
-
-
-
-
 def run_2():
-     #צוללן אלמוגים
      chassis.settings(251.7,567.8)
      chassis.settings(403.0032)
+     #start 1
      chassis.straight(200.0908)
+     chassis.settings(turn_acceleration=125)
      chassis.turn(45)
      chassis.straight(350)
      chassis.turn(-45)
      chassis.straight(219.0000000009)
      chassis.turn(-87)
-     chassis.settings(700,1203)
+     chassis.settings(601,1003)
      chassis.straight(78.998)
      chassis.straight(-28.0009)     
      arm_right.run_angle(400, -500.09)
@@ -81,11 +77,32 @@ def run_2():
      chassis.settings(653.2,1078)
      chassis.straight(238)
      chassis.settings(367,299)
-     chassis.straight(-331)
-     chassis.turn(45.3)
-     arm_right.run_angle(100, 50.09)
+     chassis.straight(-336.003001)
+     chassis.turn(47.3)
      chassis.straight(79.7)
-     arm_right.run_angle(-400,-200.09)
+     arm_right.run_angle(-400,-500.09)
+    #  chassis.settings(251.7,567.8)
+    #  chassis.settings(403.0032)
+    #  chassis.straight(200.0908)
+    #  chassis.turn(45)
+    #  chassis.straight(350)
+    #  chassis.turn(-45)
+    #  chassis.straight(219.0000000009)
+    #  chassis.turn(-87)
+    #  chassis.settings(700,1203)
+    #  chassis.straight(78.998)
+    #  chassis.straight(-28.0009)     
+    #  arm_right.run_angle(400, -500.09)
+    #  chassis.straight(-76)
+    #  chassis.turn(40)
+    #  chassis.settings(653.2,1078)
+    #  chassis.straight(238)
+    #  chassis.settings(367,299)
+    #  chassis.straight(-331)
+    #  chassis.turn(45.3)
+    #  arm_right.run_angle(100, 50.09)
+    #  chassis.straight(81)
+    #  arm_right.run_angle(-400,-200.09)
 
 
 
