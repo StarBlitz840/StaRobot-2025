@@ -42,13 +42,28 @@ def run_1():
     arm_left.run_angle(250, 95, wait=False)
     arm_right.run_angle(250, -95)
     chassis.settings(350)
-    chassis.straight(525)
+    chassis.straight(510)
     arm_right.run_angle(250, 120, wait=False)
     arm_left.run_angle(250, -120)
-    chassis.settings(600)
-    chassis.straight(-600)
+    chassis.settings(250,100)
+    chassis.straight(-225)
+    chassis.turn(-106)
+    chassis.straight(-250)
+    chassis.settings(500,500,300)
+    chassis.straight(240)
+    chassis.turn(110)
+    chassis.straight(-350)
+
+
+
+
+
+
+
+
 
 def run_2():
+     #צוללן אלמוגים
      chassis.settings(251.7,567.8)
      chassis.settings(403.0032)
      chassis.straight(200.0908)
@@ -57,7 +72,7 @@ def run_2():
      chassis.turn(-45)
      chassis.straight(219.0000000009)
      chassis.turn(-87)
-     chassis.settings(601,1003)
+     chassis.settings(700,1203)
      chassis.straight(78.998)
      chassis.straight(-28.0009)     
      arm_right.run_angle(400, -500.09)
@@ -66,11 +81,11 @@ def run_2():
      chassis.settings(653.2,1078)
      chassis.straight(238)
      chassis.settings(367,299)
-     chassis.straight(-336.003001)
-     chassis.turn(47.3)
-     arm_right.run_angle(400, 200.09)
+     chassis.straight(-331)
+     chassis.turn(45.3)
+     arm_right.run_angle(100, 50.09)
      chassis.straight(79.7)
-
+     arm_right.run_angle(-400,-200.09)
 
 
 
