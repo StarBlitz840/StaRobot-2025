@@ -39,15 +39,15 @@ colors = (
 
 
 def run_1():
-    arm_left.run_angle(250, 95, wait=False)
-    arm_right.run_angle(250, -95)
+    #arm_left.run_angle(250, 95, wait=False)
+    #arm_right.run_angle(250, -95)
     chassis.settings(350)
     chassis.straight(510)
     arm_right.run_angle(250, 120, wait=False)
     arm_left.run_angle(250, -120)
     chassis.settings(250,100)
     chassis.straight(-225)
-    chassis.turn(-106)
+    chassis.turn(-109.8)
     chassis.straight(-250)
     chassis.settings(500,500,300)
     chassis.straight(240)
@@ -60,7 +60,7 @@ def run_1():
 def run_2():
      chassis.settings(251.7,567.8)
      chassis.settings(403.0032)
-     #start 1
+     #moving
      chassis.straight(200.0908)
      chassis.settings(turn_acceleration=125)
      chassis.turn(45)
@@ -68,43 +68,37 @@ def run_2():
      chassis.turn(-45)
      chassis.straight(219.0000000009)
      chassis.turn(-87)
-     chassis.settings(601,1003)
-     chassis.straight(78.998)
-     chassis.straight(-28.0009)     
-     arm_right.run_angle(400, -500.09)
+     #pushing coral
+     chassis.settings(300,200)
+     chassis.turn(2)
+     chassis.straight(90.998)
+     chassis.straight(-41.0009)
+     #taking dude   
+     arm_right.run_angle(400, -550.09)
      chassis.straight(-76)
      chassis.turn(40)
-     chassis.settings(653.2,1078)
-     chassis.straight(238)
+     #shark
+     chassis.settings(1000.2,1000)
+     chassis.straight(300)
      chassis.settings(367,299)
-     chassis.straight(-336.003001)
-     chassis.turn(47.3)
-     chassis.straight(79.7)
-     arm_right.run_angle(-400,-500.09)
-    #  chassis.settings(251.7,567.8)
-    #  chassis.settings(403.0032)
-    #  chassis.straight(200.0908)
-    #  chassis.turn(45)
-    #  chassis.straight(350)
-    #  chassis.turn(-45)
-    #  chassis.straight(219.0000000009)
-    #  chassis.turn(-87)
-    #  chassis.settings(700,1203)
-    #  chassis.straight(78.998)
-    #  chassis.straight(-28.0009)     
-    #  arm_right.run_angle(400, -500.09)
-    #  chassis.straight(-76)
-    #  chassis.turn(40)
-    #  chassis.settings(653.2,1078)
-    #  chassis.straight(238)
-    #  chassis.settings(367,299)
-    #  chassis.straight(-331)
-    #  chassis.turn(45.3)
-    #  arm_right.run_angle(100, 50.09)
-    #  chassis.straight(81)
-    #  arm_right.run_angle(-400,-200.09)
-
-
+     chassis.straight(-325.003001)
+     #moving
+     chassis.turn(30.3)
+     chassis.straight(-40)
+     chassis.turn(10)
+     chassis.settings(600,700)
+     #puting dude
+     arm_right.run_angle(-400,-30)
+     chassis.straight(80)
+     wheel_right.run_angle(300,-24)
+     chassis.straight(-15)
+     arm_right.run_angle(-400,-550.09)
+    #  wheel_right.run_angle(300,30)
+     #geting home 
+     chassis.straight(-100)
+     chassis.settings(600,500)
+     chassis.curve(-500,-90)
+    
 
 
 

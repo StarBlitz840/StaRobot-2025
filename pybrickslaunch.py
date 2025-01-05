@@ -1,4 +1,4 @@
-HUB_NAME = "Controller2"
+HUB_NAME = "Controller1"
 
 import os
 import subprocess
