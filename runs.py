@@ -39,17 +39,20 @@ colors = (
 
 
 def run_1():
-    #arm_left.run_angle(250, 95, wait=False)
-    #arm_right.run_angle(250, -95)
+     #moving 
     chassis.settings(350)
     chassis.straight(510)
+    #catching
     arm_right.run_angle(250, 120, wait=False)
     arm_left.run_angle(250, -120)
+    #moving
     chassis.settings(250,100)
     chassis.straight(-225)
     chassis.turn(-109.8)
+    #moving up
     chassis.straight(-250)
     chassis.settings(500,500,300)
+    #going home
     chassis.straight(240)
     chassis.turn(110)
     chassis.straight(-350)
@@ -104,7 +107,15 @@ def run_2():
 
 
 def run_3():
-    pass
+    chassis.settings(246,327)
+    wheel_left.run_angle(600,1878.42,wait=False)
+    wheel_right.run_angle(595,1878.42)
+    #chassis.straight(878.42)
+    chassis.settings(100,100)
+    chassis.straight(-200.42)
+    chassis.straight(-100.42)
+
+
 
 def run_4():
     pass
@@ -112,7 +123,8 @@ def run_4():
 def run_5():
     pass
 def run_9():
-    pass
+    chassis.straight(2000)
+  
 
 
 selected = hub_menu("1", "2", "3", "4", "5", "9")
