@@ -61,6 +61,7 @@ def run_1():
 
 
 def run_2():
+     hub.imu.reset_heading(0)
      chassis.settings(251.7,567.8)
      chassis.settings(403.0032)
      #moving
@@ -75,14 +76,16 @@ def run_2():
      chassis.settings(300,200)
      chassis.turn(2)
      chassis.straight(90.998)
-     chassis.straight(-41.0009)
+    #  chassis.straight(-41.0009)
      #taking dude   
      arm_right.run_angle(400, -550.09)
      chassis.straight(-76)
-     chassis.turn(40)
+     chassis.straight(-41.0009)
+
+     chassis.turn(34)
      #shark
-     chassis.settings(1000.2,1000)
-     chassis.straight(300)
+     chassis.settings(900.2,900)
+     chassis.straight(280)
      chassis.settings(367,299)
      chassis.straight(-325.003001)
      #moving
