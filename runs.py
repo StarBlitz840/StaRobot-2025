@@ -110,13 +110,17 @@ def run_2():
 
 
 def run_3():
+    #pushing ship
     arm_right.run_angle(100,100, wait=False)
+    arm_left.run_angle(400,-100,wait=False)
     chassis.settings(246,327)
     chassis.straight(-650.42)
     chassis.straight(50.42)
-    chassis.straight(-350.42)
+    chassis.straight(-300)
+    #pulling crabs
     chassis.settings(100,50)
     chassis.straight(220)
+    #moving
     chassis.turn(-160)
     chassis.settings(500, 500)
     chassis.straight(100)
@@ -124,11 +128,22 @@ def run_3():
     chassis.straight(100)
     chassis.curve(100, -70)
     chassis.straight(100)
-    arm_right.run_angle(-400,200)
+    #puting shark
+    arm_left.run_angle(400,-200,wait=False)
+    arm_right.run_angle(-400,100)
     chassis.turn(50)
-    chassis.straight(-300)
-
-
+    chassis.straight(-150)
+    chassis.turn(-60)
+    #taking shrimp
+    arm_left.run_angle(500,400,wait=False)
+    wait(200)
+    chassis.straight(170)
+    arm_left.run_angle(500,-400,wait=False)
+    chassis.turn(10)
+    wait(500)
+    chassis.straight(-100)
+    chassis.turn(70)
+    chassis.curve(-10000,-45)
 
 def run_4():
     pass
