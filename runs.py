@@ -47,10 +47,10 @@ def run_1():
     arm_left.run_angle(250, -120)
     #moving
     chassis.settings(250,100)
-    chassis.straight(-225)
-    chassis.turn(-109.8)
+    chassis.straight(-270)
+    chassis.turn(-113)
     #moving up
-    chassis.straight(-250)
+    chassis.straight(-300)
     chassis.settings(500,500,300)
     #going home
     chassis.straight(240)
@@ -61,6 +61,7 @@ def run_1():
 
 
 def run_2():
+
      hub.imu.reset_heading(0)
      chassis.settings(251.7,567.8)
      chassis.settings(403.0032)
@@ -91,7 +92,7 @@ def run_2():
      #moving
      chassis.turn(30.3)
      chassis.straight(-40)
-     chassis.turn(10)
+     chassis.turn(12)
      chassis.settings(600,700)
      #puting dude
      arm_right.run_angle(-400,-30)
@@ -154,7 +155,7 @@ def run_4():
     arm_left.run_angle(300,400)
 
 def run_5():
-    pass
+    arm_left.run_angle(300,400)
 def run_9():
     chassis.straight(2000)
   
