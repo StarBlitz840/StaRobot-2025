@@ -43,11 +43,11 @@ def run_1():
     chassis.settings(350)
     chassis.straight(510)
     #catching
-    arm_right.run_angle(250, 120, wait=False)
-    arm_left.run_angle(250, -120)
+    arm_right.run_angle(250, 100, wait=False)
+    arm_left.run_angle(250, -100)
     #moving
     chassis.settings(250,100)
-    chassis.straight(-270)
+    chassis.straight(-280)
     chassis.turn(-113)
     #moving up
     chassis.straight(-300)
@@ -97,7 +97,7 @@ def run_2():
      #puting dude
      arm_right.run_angle(-400,-30)
      chassis.straight(80)
-     wheel_right.run_angle(300,-24)
+     wheel_right.run_angle(300,-30)
      chassis.straight(-15)
      arm_right.run_angle(-400,-550.09)
     #  wheel_right.run_angle(300,30)
@@ -122,21 +122,36 @@ def run_3():
     chassis.settings(100,50)
     chassis.straight(220)
     #moving
-    chassis.turn(-160)
-    chassis.settings(500, 500)
+    chassis.settings(306.34,301)
+    chassis.turn(-150)
+    chassis.straight(275)
+    chassis.turn(-40.8876)
+    #pushing ship
+    chassis.straight(200)
+    chassis.straight(-200)
+    chassis.turn(50)
+    chassis.straight(-200)
+    #moving
+    chassis.turn(-100)
     chassis.straight(100)
-    chassis.curve(-200, 35)
-    chassis.straight(100)
-    chassis.curve(100, -70)
-    chassis.straight(100)
-    #puting shark
-    arm_left.run_angle(400,-200,wait=False)
-    arm_right.run_angle(-200,50)
-    chassis.straight(-68)
-    #going home
-    chassis.turn(80)
-    chassis.straight(400)
-    chassis.curve(500,90)
+    
+    
+
+    #chassis.turn(-160)
+    #chassis.settings(500, 500)
+    #chassis.straight(100)
+    #chassis.curve(-200, 35)
+    #chassis.straight(100)
+    #chassis.curve(100, -70)
+    #chassis.straight(100)
+          #puting shark
+    #arm_right.run_angle(-400,100,wait=False)
+    #chassis.straight(10)
+    #chassis.straight(-68)
+          #going home
+    #chassis.turn(80)
+    #chassis.straight(400)
+    #chassis.curve(500,90)
 
 
     #chassis.straight(-170)
