@@ -112,6 +112,7 @@ def run_2():
 
 def run_3():
     #pushing ship
+    hub.imu.reset_heading(0)
     arm_right.run_angle(100,100, wait=False)
     arm_left.run_angle(400,-100,wait=False)
     chassis.settings(246,327)
@@ -119,50 +120,36 @@ def run_3():
     chassis.straight(50.42)
     chassis.straight(-300)
     #pulling crabs
-    chassis.settings(100,50)
-    chassis.straight(220)
+    chassis.settings(50,50)
+    chassis.straight(165)
     #moving
     chassis.settings(306.34,301)
-    chassis.turn(-150)
+    chassis.straight(55)
+
+    chassis.turn(-145)
     chassis.straight(275)
-    chassis.turn(-40.8876)
+    chassis.turn(-30.8876)
     #pushing ship
     chassis.straight(200)
     chassis.straight(-200)
-    chassis.turn(50)
-    chassis.straight(-200)
+    chassis.turn(40)
+    chassis.straight(-250)
     #moving
-    chassis.turn(-100)
+    chassis.turn(-70)
+    chassis.straight(100)
+    chassis.turn(-50)
     chassis.straight(100)
     
-    
-
-    #chassis.turn(-160)
-    #chassis.settings(500, 500)
-    #chassis.straight(100)
-    #chassis.curve(-200, 35)
-    #chassis.straight(100)
-    #chassis.curve(100, -70)
-    #chassis.straight(100)
-          #puting shark
-    #arm_right.run_angle(-400,100,wait=False)
-    #chassis.straight(10)
-    #chassis.straight(-68)
+    #puting shark
+    arm_right.run_angle(-400,100,wait=False)
+    chassis.straight(10)
+    chassis.straight(-68)
           #going home
-    #chassis.turn(80)
-    #chassis.straight(400)
-    #chassis.curve(500,90)
-
-
-    #chassis.straight(-170)
-    #chassis.turn(-60)
-    #taking shrimp
-    #arm_left.run_angle(500,400,wait=False)
-    #wait(200)
-    #chassis.straight(170)
-    #chassis.straight(-20)
-    #arm_left.run_angle(-200,400)
-    #chassis.turn(-60)
+    chassis.turn(70)
+    chassis.settings(800,800)
+    chassis.straight(400, then=Stop.NONE)
+    chassis.curve(380,40, then=Stop.NONE)
+    chassis.curve(380,-100,)
 
 
 
