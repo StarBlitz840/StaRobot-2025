@@ -144,7 +144,7 @@ def run_3():
     arm_right.run_angle(-400,100,wait=False)
     chassis.straight(10)
     chassis.straight(-68)
-          #going home
+     #going home
     chassis.turn(70)
     chassis.settings(800,800)
     chassis.straight(400, then=Stop.NONE)
@@ -154,12 +154,49 @@ def run_3():
 
 
 def run_4():
-    arm_left.run_angle(300,400)
+    #petro
+    hub.imu.reset_heading(0)
+    chassis.settings(600,1000,600)
+    chassis.straight(-400)
+    arm_left.run_angle(400,400, wait=False)
+    chassis.straight(250)
+
+    #srimp 1
+    chassis.settings(300,300)
+    chassis.turn(20)
+    chassis.straight(-200)
+  
+
+    #seaweed
+    chassis.turn(29)
+    chassis.straight(-210)
+
+    #srimp 2
+    chassis.straight(100)
+    chassis.turn(-10)
+    chassis.straight(-170)
+
+    #shrimp 3
+    chassis.straight(100)
+    chassis.turn(30)
+    chassis.straight(-170)
+    chassis.straight(200)
+ 
+
+    chassis.turn(10)
+    chassis.straight(-70)
+    chassis.turn(-20)
+    chassis.straight(-50.643457)
+    chassis.turn(30)
+
 
 def run_5():
-    arm_left.run_angle(300,400)
+    arm_right.run_angle(400,-700)
+
+
 def run_9():
-    chassis.straight(2000)
+    chassis.settings(1000)
+    chassis.straight(-200000)
   
 
 
