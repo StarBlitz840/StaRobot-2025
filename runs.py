@@ -181,13 +181,11 @@ def run_4():
     chassis.straight(160)
 
     #shrimp 3
-<<<<<<< HEAD
     chassis.turn(25)
     chassis.settings(1000,1000)
     chassis.straight(-250)
     chassis.settings(600,700)
     chassis.curve
-=======
     chassis.straight(100)
     chassis.turn(30)
     chassis.straight(-170)
@@ -198,7 +196,6 @@ def run_4():
     chassis.turn(-20)
     chassis.straight(-50.643457)
     chassis.turn(30)
->>>>>>> 0fe3f42318c843ffa3bf6bf3233e394308555ffc
 
 
 def run_5():
