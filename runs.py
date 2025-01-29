@@ -144,13 +144,12 @@ def run_3():
     arm_right.run_angle(-400,100,wait=False)
     chassis.straight(10)
     chassis.straight(-68)
-     #going home
+          #going home
     chassis.turn(70)
     chassis.settings(800,800)
     chassis.straight(400, then=Stop.NONE)
     chassis.curve(380,40, then=Stop.NONE)
     chassis.curve(380,-100,)
-
 
 
 def run_4():
@@ -182,20 +181,33 @@ def run_4():
     chassis.straight(160)
 
     #shrimp 3
+<<<<<<< HEAD
     chassis.turn(25)
     chassis.settings(1000,1000)
     chassis.straight(-250)
     chassis.settings(600,700)
     chassis.curve
+=======
+    chassis.straight(100)
+    chassis.turn(30)
+    chassis.straight(-170)
+    chassis.straight(200)
+
+    chassis.turn(10)
+    chassis.straight(-70)
+    chassis.turn(-20)
+    chassis.straight(-50.643457)
+    chassis.turn(30)
+>>>>>>> 0fe3f42318c843ffa3bf6bf3233e394308555ffc
 
 
 def run_5():
-    arm_right.run_angle(400,-700)
-
+    arm_left.run_angle(300,400)
+    # arm_left.run_angle(300,-400)
 
 def run_9():
-    chassis.settings(1000)
-    chassis.straight(-200000)
+    chassis.settings(1000,1000)
+    chassis.straight(20000000)
   
 
 
