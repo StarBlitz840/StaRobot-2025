@@ -174,7 +174,8 @@ def run_4():
     chassis.straight(150)
 
     #shrimp 2
-    chassis.turn(-15)
+    chassis.settings(200,100)
+    chassis.turn(-10)
     chassis.settings(1000,1000)
     chassis.straight(-230)
     chassis.settings(600,700)
