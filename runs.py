@@ -154,40 +154,38 @@ def run_3():
 
 
 def run_4():
-    #petro
+    #shimp 1
     hub.imu.reset_heading(0)
-    chassis.settings(600,1000,600)
-    chassis.straight(-400)
-    arm_left.run_angle(400,400, wait=False)
-    chassis.straight(250)
-
-    #srimp 1
-    chassis.settings(300,300)
-    chassis.turn(20)
+    chassis.settings(600,700,600)
     chassis.straight(-200)
-  
+    chassis.turn(15)
+    arm_left.run_angle(400,400, wait=False)
+    chassis.straight(-150) 
+
+    #petro
+    chassis.straight(200)
+    chassis.turn(-13)
+    chassis.straight(-250)
 
     #seaweed
-    chassis.turn(29)
-    chassis.straight(-210)
+    chassis.straight(110)
+    chassis.turn(50)
+    chassis.straight(-250)
+    chassis.straight(150)
 
-    #srimp 2
-    chassis.straight(100)
-    chassis.turn(-10)
-    chassis.straight(-170)
+    #shrimp 2
+    chassis.turn(-15)
+    chassis.settings(1000,1000)
+    chassis.straight(-230)
+    chassis.settings(600,700)
+    chassis.straight(160)
 
     #shrimp 3
-    chassis.straight(100)
-    chassis.turn(30)
-    chassis.straight(-170)
-    chassis.straight(200)
- 
-
-    chassis.turn(10)
-    chassis.straight(-70)
-    chassis.turn(-20)
-    chassis.straight(-50.643457)
-    chassis.turn(30)
+    chassis.turn(25)
+    chassis.settings(1000,1000)
+    chassis.straight(-250)
+    chassis.settings(600,700)
+    chassis.curve
 
 
 def run_5():
