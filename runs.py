@@ -155,10 +155,9 @@ def run_3():
 def run_4():
     #shimp 1
     hub.imu.reset_heading(0)
-    chassis.settings(600,700,600)
+    chassis.settings(600,700)
     chassis.straight(-200)
     chassis.turn(15)
-    arm_left.run_angle(400,400, wait=False)
     chassis.straight(-150) 
 
     #petro
@@ -168,47 +167,58 @@ def run_4():
 
     #seaweed
     chassis.straight(110)
-    chassis.turn(50)
+    chassis.turn(45)
     chassis.straight(-250)
     chassis.straight(150)
 
     #shrimp 2
     chassis.settings(200,100)
     chassis.turn(-10)
+    chassis.straight(-150)
+    chassis.turn(-5)
     chassis.settings(1000,1000)
-    chassis.straight(-230)
+    chassis.straight(-100)
     chassis.settings(600,700)
+    chassis.turn(5)
     chassis.straight(160)
 
     #shrimp 3
-<<<<<<< HEAD
     chassis.turn(25)
+    chassis.straight(-150)
+    chassis.turn(-5)
+    chassis.settings(100,200)
+    chassis.straight(-50)
     chassis.settings(1000,1000)
-    chassis.straight(-250)
-    chassis.settings(600,700)
-    chassis.curve
-=======
+    chassis.straight(-50)
+    chassis.turn(-10)
+    chassis.straight(100)   
+    
+    wheel_right.run_angle(400,-200)
     chassis.straight(100)
-    chassis.turn(30)
-    chassis.straight(-170)
-    chassis.straight(200)
-
-    chassis.turn(10)
+    chassis.turn(13)
+    chassis.settings(300,300)
     chassis.straight(-70)
-    chassis.turn(-20)
-    chassis.straight(-50.643457)
-    chassis.turn(30)
->>>>>>> 0fe3f42318c843ffa3bf6bf3233e394308555ffc
+    #radio
+    chassis.straight(150)
+    chassis.turn(-50)
+    chassis.straight(-100)
+    chassis.turn(65)
+    arm_right.run_angle(300,60)
+    chassis.turn(10)
+    chassis.straight(150)
+    arm_right.run_angle(400,-600)
+    arm_right.run_angle(100,100)
+    chassis.straight(-150)
 
 
 def run_5():
-    arm_left.run_angle(300,400)
-    # arm_left.run_angle(300,-400)
+    arm_right.run_angle(300,100)
+
+
 
 def run_9():
-    chassis.settings(1000,1000)
-    chassis.straight(20000000)
-  
+        chassis.settings(1000,1000)
+        chassis.straight(100000)
 
 
 selected = hub_menu("1", "2", "3", "4", "5", "9")
