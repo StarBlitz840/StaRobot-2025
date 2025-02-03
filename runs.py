@@ -191,24 +191,19 @@ def run_4():
     chassis.settings(1000,1000)
     chassis.straight(-50)
     chassis.turn(-10)
-    chassis.straight(100)   
+    chassis.straight(100) 
+    chassis.straight(50)
+    chassis.turn(-50)  
+    chassis.straight(-30)
+    chassis.turn(90)
+    chassis.straight(-50)
+    chassis.turn(-45)
+    chassis.straight(10)
+    chassis.turn(-75)
+    chassis.turn(270)
     
-    wheel_right.run_angle(400,-200)
-    chassis.straight(100)
-    chassis.turn(13)
-    chassis.settings(300,300)
-    chassis.straight(-70)
     #radio
-    chassis.straight(150)
-    chassis.turn(-50)
-    chassis.straight(-100)
-    chassis.turn(65)
-    arm_right.run_angle(300,60)
-    chassis.turn(10)
-    chassis.straight(150)
-    arm_right.run_angle(400,-600)
-    arm_right.run_angle(100,100)
-    chassis.straight(-150)
+    
 
 
 def run_5():
@@ -223,6 +218,7 @@ def run_9():
 
 selected = hub_menu("1", "2", "3", "4", "5", "9")
 print("gyatt")
+print("t")
 
 if selected == "1":
     run_1()
