@@ -199,8 +199,9 @@ def run_4():
     chassis.straight(-50)
     chassis.turn(-45)
     chassis.straight(10)
-    chassis.turn(-75)
-    chassis.turn(270)
+    chassis.turn(40)
+    chassis.straight(30)
+    
     
     #radio
     
