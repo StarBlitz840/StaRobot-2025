@@ -39,7 +39,7 @@ colors = (
 
 
 def run_1():
-     #moving 
+    #moving 
     chassis.settings(350)
     chassis.straight(510)
     #catching
@@ -105,6 +105,7 @@ def run_2():
      chassis.straight(-100)
      chassis.settings(600,500)
      chassis.curve(-500,-90)
+     print("erez is the best")
     
 
 
@@ -138,13 +139,15 @@ def run_3():
     chassis.turn(-70)
     chassis.straight(100)
     chassis.turn(-50)
+    print("erez is the best")
     chassis.straight(100)
     
     #puting shark
     arm_right.run_angle(-400,100,wait=False)
     chassis.straight(10)
     chassis.straight(-68)
-          #going home
+
+    #going home
     chassis.turn(70)
     chassis.settings(800,800)
     chassis.straight(400, then=Stop.NONE)
@@ -186,40 +189,30 @@ def run_4():
     chassis.turn(25)
     chassis.straight(-150)
     chassis.turn(-5)
-    chassis.settings(100,200)
+    chassis.settings(150,100)
     chassis.straight(-50)
     chassis.settings(1000,1000)
     chassis.straight(-50)
     chassis.turn(-10)
-    chassis.straight(100) 
-    chassis.straight(50)
-    chassis.turn(-50)  
-    chassis.straight(-30)
-    chassis.turn(90)
-    chassis.straight(-50)
-    chassis.turn(-45)
-    chassis.straight(10)
-    chassis.turn(40)
-    chassis.straight(30)
-    
-    
-    #radio
-    
+
+    chassis.straight(150)
+    chassis.turn(60)
+    chassis.straight(-70)
+
+    chassis.curve(250,50)
 
 
 def run_5():
-    arm_right.run_angle(300,100)
-
-
+    chassis.curve(60,50)
 
 def run_9():
-        chassis.settings(1000,1000)
-        chassis.straight(100000)
+    chassis.settings(1000,1000)
+    chassis.straight(100000)
 
 
 selected = hub_menu("1", "2", "3", "4", "5", "9")
 print("gyatt")
-print("t")
+print("erez is the best")
 
 if selected == "1":
     run_1()
