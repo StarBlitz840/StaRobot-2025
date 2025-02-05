@@ -139,7 +139,6 @@ def run_3():
     chassis.turn(-70)
     chassis.straight(100)
     chassis.turn(-50)
-    print("erez is the best")
     chassis.straight(100)
     
     #puting shark
@@ -195,15 +194,28 @@ def run_4():
     chassis.straight(-50)
     chassis.turn(-10)
 
-    chassis.straight(150)
-    chassis.turn(60)
-    chassis.straight(-70)
-
-    chassis.curve(250,50)
+    chassis.straight(200)
+    chassis.turn(50)
+    chassis.straight(-90)
+    chassis.straight(100)
+    chassis.curve(100,50)
 
 
 def run_5():
-    chassis.curve(60,50)
+    hub.imu.reset_heading(0)
+    chassis.settings(400,400)
+    chassis.straight(-350)
+    chassis.turn(-40)
+    chassis.straight(-300)
+    chassis.turn(60)
+    chassis.straight(-200)
+    chassis.turn(25)
+    chassis.settings(200,200)
+    chassis.straight(-250)
+    chassis.straight(500)
+    chassis.turn(-90)
+
+
 
 def run_9():
     chassis.settings(1000,1000)
