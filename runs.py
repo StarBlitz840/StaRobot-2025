@@ -188,7 +188,7 @@ def run_4():
     chassis.turn(25)
     chassis.straight(-150)
     chassis.turn(-5)
-    chassis.settings(150,100)
+    # chassis.settings(150,100)
     chassis.straight(-50)
     chassis.settings(1000,1000)
     chassis.straight(-50)
@@ -196,9 +196,19 @@ def run_4():
 
     chassis.straight(200)
     chassis.turn(50)
-    chassis.straight(-90)
+    chassis.settings(200)
+    chassis.straight(-120)
     chassis.straight(100)
+    chassis.settings(1000)
     chassis.curve(100,50)
+    chassis.turn(45)
+    chassis.straight(260)
+    chassis.turn(-55)
+    chassis.straight(75)
+    arm_right.run_time(-300,2000)
+    chassis.turn(60)
+    chassis.straight(-1000)
+
 
 
 def run_5():
