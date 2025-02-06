@@ -212,8 +212,6 @@ def run_4():
 
 
 def run_5():
-    hub.imu.reset_heading(0)
-    chassis.settings(400,400)
     chassis.straight(-350)
     chassis.turn(-40)
     chassis.straight(-300)
@@ -221,9 +219,17 @@ def run_5():
     chassis.straight(-200)
     chassis.turn(25)
     chassis.settings(200,200)
-    chassis.straight(-250)
-    chassis.straight(500)
-    chassis.turn(-90)
+    chassis.straight(-165)
+    chassis.settings(400,400)
+    chassis.straight(200)
+    chassis.turn(-25)
+    chassis.straight(165)
+    chassis.turn(-60)
+    arm_left.run_time(-500,-1000)
+    chassis.curve(-500,25,then=Stop.NONE)
+    chassis.straight(-230)
+    chassis.curve(-100,10)
+    arm_left.run_angle(300,500)
 
 
 
