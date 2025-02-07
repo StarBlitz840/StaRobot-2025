@@ -229,7 +229,9 @@ def run_5():
     chassis.curve(-500,25,then=Stop.NONE)
     chassis.straight(-230)
     chassis.curve(-100,10)
+    chassis.straight(-10)
     arm_left.run_angle(300,500)
+    chassis.straight(30)
 
 
 
