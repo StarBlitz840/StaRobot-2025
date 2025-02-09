@@ -119,7 +119,7 @@ def run_3():
     chassis.settings(246,327)
     chassis.straight(-650.42)
     chassis.straight(50.42)
-    chassis.straight(-300)
+    chassis.straight(-270)
     #pulling crabs
     chassis.settings(50,50)
     chassis.straight(165)
@@ -131,7 +131,7 @@ def run_3():
     chassis.straight(275)
     chassis.turn(-30.8876)
     #pushing ship
-    chassis.straight(200)
+    chassis.straight(250)
     chassis.straight(-200)
     chassis.turn(40)
     chassis.straight(-250)
@@ -142,7 +142,8 @@ def run_3():
     chassis.straight(100)
     
     #puting shark
-    arm_right.run_angle(-400,100,wait=False)
+    arm_left.run_angle(-400,100,wait=False)
+
     chassis.straight(10)
     chassis.straight(-68)
 
@@ -187,7 +188,6 @@ def run_4():
     chassis.straight(100)
     chassis.turn(80)
     chassis.turn(-10)
-    # chassis.straight(-20)
     chassis.straight(90)
     chassis.straight(70)
     chassis.turn(-60)
@@ -198,73 +198,51 @@ def run_4():
     chassis.straight(-100)
     arm_right.run_angle(200,100)
     chassis.straight(150)
-    
-
-    
-
-    
-
-
-    #shrimp 3
-    # chassis.turn(25)
-    # chassis.straight(-150)
-    # chassis.turn(-5)
-    # # chassis.settings(150,100)
-    # chassis.straight(-50)
-    # chassis.settings(1000,1000)
-    
-    # chassis.turn(-10)
-    # chassis.straight(80)
-    # chassis.turn(270)
-    # chassis.straight(-170)
-    # chassis.turn(-20)
-    
-    
-
-    # )chassis.straight(200)
-    # chassis.turn(50)
-    # chassis.settings(200)
-    # chassis.straight(-120)
-    # chassis.straight(100)
-    # chassis.settings(1000)
-    # chassis.curve(100,50)
-    # chassis.turn(45)
-    # chassis.straight(260)
-    # chassis.turn(-55)
-    # chassis.straight(75)
-    # arm_right.run_time(-300,2000)
-    # chassis.turn(60)
-    # chassis.straight(-1000)
-
-
+    chassis.turn(90)
+    chassis.straight(-130)
+    chassis.turn(-30)
+    chassis.straight(-533)
+   
 
 def run_5():
     hub.imu.reset_heading(0)
-    chassis.settings(300,300)
-    chassis.straight(-350)
+    chassis.straight(-400)
+    chassis.turn(20)
+    chassis.straight(-300)
     chassis.turn(-40)
     chassis.straight(-300)
-    chassis.turn(78)
-    chassis.straight(-180)
-    chassis.settings(200,200)
-    chassis.straight(-180)
-    chassis.settings(400,400)
-    chassis.straight(200)
-    chassis.turn(-25)
-    chassis.straight(165)
-    chassis.turn(-60)
-    arm_left.run_time(-500,-1000)
-    chassis.curve(-500,25,then=Stop.NONE)
-    chassis.straight(-200)
-    chassis.curve(-100,10)
-    chassis.straight(-20)
+    chassis.turn(-30)
+    chassis.straight(-125)
     chassis.turn(30)
-    chassis.straight(-180)
-    arm_left.run_angle(100,500)
-    arm_left.run_angle(100,-50)
-    print("CAT")
-    chassis.straight(-100)
-    chassis.straight(-100)
+    chassis.straight(-80)
+    arm_left.run_angle(200,1000)
+    chassis.straight(240)
+
+
+    # chassis.settings(300,300)
+    # chassis.straight(-350)
+    # chassis.turn(-40)
+    # chassis.straight(-300)
+    # chassis.turn(78)
+    # chassis.straight(-200)
+    # chassis.settings(200,200)
+    # chassis.straight(-180)
+    # chassis.settings(400,400)
+    # chassis.straight(200)
+    # chassis.turn(-25)
+    # chassis.straight(165)
+    # chassis.turn(-60)
+    # arm_left.run_time(-500,-1000)
+    # chassis.curve(-500,25,then=Stop.NONE)
+    # chassis.straight(-200)
+    # chassis.curve(-100,10)
+    # chassis.straight(-20)
+    # chassis.turn(30)
+    # chassis.straight(-180)
+    # arm_left.run_angle(100,500)
+    # arm_left.run_angle(100,-50)
+    # chassis.straight(-100)
+    # chassis.straight(-100)
 
 
 
