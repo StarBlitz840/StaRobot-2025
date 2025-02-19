@@ -65,21 +65,23 @@ def run_2():
      hub.imu.reset_heading(0)
      chassis.settings(251.7,567.8)
      chassis.settings(403.0032)
+     arm_right.run_time(500,1000,wait=False)
+     arm_left.run_time(-500,1000,wait=False)
      #moving
      chassis.straight(200.0908)
      chassis.settings(turn_acceleration=125)
      chassis.turn(45)
      chassis.straight(350)
      chassis.turn(-45)
-     chassis.straight(219.0000000009)
+     chassis.straight(219)
      chassis.turn(-87)
      #pushing coral
      chassis.settings(300,200)
-     chassis.turn(2)
+     chassis.turn(3)
      chassis.straight(90.998)
     #  chassis.straight(-41.0009)
      #taking dude   
-     arm_right.run_angle(400, -550.09)
+     arm_right.run_time(-500,2000)
      chassis.straight(-76)
      chassis.straight(-41.0009)
 
@@ -88,23 +90,19 @@ def run_2():
      chassis.settings(900.2,900)
      chassis.straight(280)
      chassis.settings(367,299)
-     chassis.straight(-325.003001)
+     chassis.curve(-300,-60)
      #moving
-     chassis.turn(30.3)
-     chassis.straight(-40)
-     chassis.turn(12)
+     chassis.turn(30)
+     chassis.curve(300,-25)
      chassis.settings(600,700)
      #puting dude
-     arm_right.run_angle(-400,-30)
-     chassis.straight(80)
-     wheel_right.run_angle(300,-30)
-     chassis.straight(-15)
-     arm_right.run_angle(-400,-550.09)
-    #  wheel_right.run_angle(300,30)
-     #geting home 
-     chassis.straight(-100)
+     wheel_left.run_angle(300,-20)
+     arm_right.run_angle(500,600)
+     chassis.turn(5)
+    # geting home 
+     chassis.straight(-300)
      chassis.settings(600,500)
-     chassis.curve(-500,-90)
+     chassis.curve(-500,-100)
      print("erez is the best")
     
 
@@ -206,7 +204,7 @@ def run_4():
 
 def run_5():
     hub.imu.reset_heading(0)
-    chassis.straight(-400)
+    chassis.straight(-380)
     chassis.turn(20)
     chassis.straight(-300)
     chassis.turn(-40)
