@@ -79,30 +79,33 @@ def run_2():
      chassis.straight(90)
      #taking dude   
      arm_right.run_time(speed=-500,time=2000)
-     chassis.straight(-76)
-     chassis.straight(-40)
-     chassis.turn(34)
+     chassis.straight(-110)
+     chassis.turn(30)
      #shark
      chassis.settings(straight_speed=900,straight_acceleration=900)
      chassis.straight(280)
      chassis.settings(straight_speed=400,straight_acceleration=350)
-     chassis.straight(-50)
+     chassis.straight(-200)
      #moving
-     chassis.turn(30)
-     chassis.curve(radius=300,angle=-25)
-     chassis.settings(straight_speed=600,straight_acceleration=700)
-     #puting dude
-     arm_right.run_angle(speed=-400,rotation_angle=-30)
-     chassis.straight(15)
-     wheel_right.run_angle(speed=300,rotation_angle=30)
-     chassis.straight(-15)
-     arm_right.run_angle(speed=-400,rotation_angle=-600)
-    #  wheel_right.run_angle(300,30)
-     #geting home 
-     chassis.straight(-300)
-     chassis.settings(straight_speed=600,straight_acceleration=500)
-     chassis.curve(radius=-500,angle=-90)
-     print("erez is the best shubi dubi")
+     chassis.turn(33)
+     chassis.curve(radius=-500,angle=-30)
+    
+     chassis.straight(250)
+     chassis.turn(5)
+     arm_right.run_time(speed=400,time=1500)
+    #  chassis.settings(straight_speed=600,straight_acceleration=700)
+    #  #puting dude
+    #  arm_right.run_angle(speed=-400,rotation_angle=-30)
+    #  chassis.straight(15)
+    #  wheel_right.run_angle(speed=300,rotation_angle=30)
+    #  chassis.straight(-15)
+    #  arm_right.run_angle(speed=-400,rotation_angle=-600)
+    # #  wheel_right.run_angle(300,30)
+    #  #geting home 
+    #  chassis.straight(-300)
+    #  chassis.settings(straight_speed=600,straight_acceleration=500)
+    #  chassis.curve(radius=-500,angle=-90)
+    #  print("erez is the best shubi dubi")
     
 
 
