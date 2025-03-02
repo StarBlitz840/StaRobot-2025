@@ -47,15 +47,28 @@ def run_1():
     arm_left.run_angle(250, -100)
     #moving
     chassis.settings(250,100)
-    chassis.straight(-280)
+    chassis.straight(-300)
     chassis.turn(-113)
     #moving up
-    chassis.straight(-300)
+    chassis.straight(-320)
     chassis.settings(500,500,300)
+    #shrimp
+    chassis.straight(160)
+    chassis.turn(20)
+    chassis.straight(-180)
+    chassis.turn(-10)
+    chassis.straight(-80)
+    chassis.turn(-10)
+    chassis.straight(-150)
+    chassis.straight(30)
+    chassis.straight(-30)
+    chassis.straight(280)
+    chassis.turn(-30)
+    chassis.straight(520)
     #going home
-    chassis.straight(240)
-    chassis.turn(110)
-    chassis.straight(-350)
+    #chassis.straight(240)
+    #chassis.turn(110)
+    #chassis.straight(-350)
 
 
 
