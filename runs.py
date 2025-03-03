@@ -36,8 +36,6 @@ colors = (
     Color.NONE,
 )
 
-
-
 def run_1():
     #moving 
     chassis.settings(350)
@@ -47,10 +45,10 @@ def run_1():
     arm_left.run_angle(250, -100)
     #moving
     chassis.settings(250,100)
-    chassis.straight(-300)
+    chassis.straight(-310)
     chassis.turn(-113)
     #moving up
-    chassis.straight(-320)
+    chassis.straight(-280)
     chassis.settings(500,500,300)
     #shrimp
     chassis.straight(160)
@@ -58,13 +56,13 @@ def run_1():
     chassis.straight(-180)
     chassis.turn(-10)
     chassis.straight(-80)
-    chassis.turn(-10)
-    chassis.straight(-150)
+    chassis.turn(-8)
+    chassis.straight(-220)
     chassis.straight(30)
     chassis.straight(-30)
     chassis.straight(280)
     chassis.turn(-30)
-    chassis.straight(520)
+    chassis.straight(660)
     #going home
     #chassis.straight(240)
     #chassis.turn(110)
@@ -206,21 +204,27 @@ def run_4():
     chassis.settings(1000,1000)
     chassis.straight(-50)
     chassis.turn(-10)
-
-    chassis.straight(200)
-    chassis.turn(50)
-    chassis.settings(200)
-    chassis.straight(-120)
-    chassis.straight(100)
-    chassis.settings(1000)
-    chassis.curve(100,50)
-    chassis.turn(45)
-    chassis.straight(260)
-    chassis.turn(-55)
-    chassis.straight(75)
-    arm_right.run_time(-300,2000)
+    chassis.straight(-140,wait=False)
+    wait(500)
+    chassis.straight(80)
+    chassis.turn(30)
+    chassis.straight(70)
     chassis.turn(60)
-    chassis.straight(-1000)
+    chassis.straight(160)
+    # chassis.straight(200)
+    # chassis.turn(50)
+    # chassis.settings(200)
+    # chassis.straight(-120)
+    # # chassis.straight(100)
+    # chassis.settings(1000)
+    # chassis.curve(100,50)
+    # chassis.turn(45)
+    # chassis.straight(260)
+    # chassis.turn(-55)
+    # chassis.straight(75)
+    # arm_right.run_time(-300,2000)
+    # chassis.turn(60)
+    # chassis.straight(-1000)
 
 
 
@@ -247,7 +251,7 @@ def run_9():
     chassis.straight(-700)
 
 
-selected = hub_menu("1", "2", "3", "4", "5", "9")
+selected = hub_menu("1", "2", "3", "4","3","3", "4", "5", "5", "5", "5", "5", "5", "9")
 print("gyatt")
 print("erez is the best")
 
