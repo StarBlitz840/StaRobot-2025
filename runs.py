@@ -35,6 +35,7 @@ colors = (
     Color.WHITE,
     Color.NONE,
 )
+gay = chassis.straight
 
 def run_1():
     #moving 
@@ -166,6 +167,7 @@ def run_3():
 
 
 def run_4():
+    
     #shimp 1
     hub.imu.reset_heading(0)
     chassis.settings(600,700)
@@ -199,18 +201,31 @@ def run_4():
     chassis.turn(25)
     chassis.straight(-150)
     chassis.turn(-5)
-    # chassis.settings(150,100)
-    chassis.straight(-50)
-    chassis.settings(1000,1000)
-    chassis.straight(-50)
-    chassis.turn(-10)
-    chassis.straight(-140,wait=False)
-    wait(500)
-    chassis.straight(80)
-    chassis.turn(30)
-    chassis.straight(70)
     chassis.turn(60)
-    chassis.straight(160)
+    gay(200)
+    # # chassis.settings(150,100)
+    # chassis.straight(-100)
+    # chassis.turn(-10)
+    # chassis.straight(-140,wait=False)
+    # wait(750)
+    # chassis.straight(170)
+    # chassis.turn(60)
+    # chassis.straight(60)
+    # chassis.turn(30)
+    # chassis.straight(150)
+    # chassis.turn(50)
+    # chassis.straight(140)
+    # chassis.turn(-60)
+    # arm_right.run_time(-300,2000)
+    # arm_right.run_time(300,1000,wait=False)
+    # wait(0)
+    # chassis.straight(-300)
+    # chassis.straight(80)
+    # chassis.turn(30)
+    # chassis.straight(160)
+    # chassis.turn(-30)
+    # chassis.turn(60)
+    # chassis.straight(160)
     # chassis.straight(200)
     # chassis.turn(50)
     # chassis.settings(200)
@@ -251,7 +266,7 @@ def run_9():
     chassis.straight(-700)
 
 
-selected = hub_menu("1", "2", "3", "4","3","3", "4", "5", "5", "5", "5", "5", "5", "9")
+selected = hub_menu("1", "2", "3", "4", "5", "9")
 print("gyatt")
 print("erez is the best")
 
