@@ -35,7 +35,10 @@ colors = (
     Color.WHITE,
     Color.NONE,
 )
-gay = chassis.straight
+RUN = chassis.straight
+speed = chassis.settings
+tomer = chassis.curve
+
 
 def run_1():
     #moving 
@@ -73,7 +76,7 @@ def run_1():
 
 
 def run_2():
-
+    #settings
      hub.imu.reset_heading(0)
      chassis.settings(straight_acceleration=350)
      chassis.settings(400)
@@ -84,11 +87,11 @@ def run_2():
      chassis.straight(350)
      chassis.turn(-45)
      chassis.straight(219)
-     chassis.turn(-87)
+     chassis.turn(-90)
      #pushing coral
      chassis.settings(straight_speed=300,straight_acceleration=200)
      chassis.turn(3)
-     chassis.straight(90)
+     chassis.straight(95)
      #taking dude   
      arm_right.run_time(speed=-500,time=2000)
      chassis.straight(-110)
@@ -97,27 +100,14 @@ def run_2():
      chassis.settings(straight_speed=900,straight_acceleration=900)
      chassis.straight(280)
      chassis.settings(straight_speed=400,straight_acceleration=350)
-     chassis.straight(-200)
+     chassis.straight(-260)
      #moving
      chassis.turn(33)
      chassis.curve(radius=-500,angle=-30)
-    
      chassis.straight(250)
      chassis.turn(5)
+     #puting dude
      arm_right.run_time(speed=400,time=1500)
-    #  chassis.settings(straight_speed=600,straight_acceleration=700)
-    #  #puting dude
-    #  arm_right.run_angle(speed=-400,rotation_angle=-30)
-    #  chassis.straight(15)
-    #  wheel_right.run_angle(speed=300,rotation_angle=30)
-    #  chassis.straight(-15)
-    #  arm_right.run_angle(speed=-400,rotation_angle=-600)
-    # #  wheel_right.run_angle(300,30)
-    #  #geting home 
-    #  chassis.straight(-300)
-    #  chassis.settings(straight_speed=600,straight_acceleration=500)
-    #  chassis.curve(radius=-500,angle=-90)
-    #  print("erez is the best shubi dubi")
     
 
 
@@ -202,7 +192,7 @@ def run_4():
     chassis.straight(-150)
     chassis.turn(-5)
     chassis.turn(60)
-    gay(200)
+    RUN(200)
     # # chassis.settings(150,100)
     # chassis.straight(-100)
     # chassis.turn(-10)
@@ -245,19 +235,22 @@ def run_4():
 
 def run_5():
     hub.imu.reset_heading(0)
-    chassis.straight(-400)
-    chassis.turn(20)
-    chassis.straight(-300)
-    chassis.turn(-40)
-    chassis.straight(-300)
+    arm_left.run_time(500,500,wait=False)
+    #puting seaweed
+    speed(700,700)
+    RUN(450)
+    RUN(-287)
+    #moving
+    speed(200,200)
     chassis.turn(60)
-    chassis.straight(-200)
-    chassis.turn(25)
-    chassis.settings(200,200)
-    chassis.straight(-250)
-    chassis.straight(500)
-    chassis.turn(-90)
-
+    speed(300,300)
+    RUN(445)
+    wheel_left.run_angle(300,170)
+    #puting shrimps
+    speed(100,100)
+    RUN(250)
+    arm_left.run_time(-500,1000)
+    speed(300,300)
 
 
 def run_9():
