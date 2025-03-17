@@ -76,6 +76,7 @@ def run_1():
 
 
 def run_2():
+    #i know it gets kind of stuck while taking dude, dont change IT!
     #settings
      hub.imu.reset_heading(0)
      chassis.settings(straight_acceleration=350)
@@ -94,20 +95,27 @@ def run_2():
      chassis.straight(95)
      #taking dude   
      arm_right.run_time(speed=-500,time=2000)
-     chassis.straight(-110)
-     chassis.turn(30)
+     chassis.straight(-120)
+     chassis.turn(34)
      #shark
      chassis.settings(straight_speed=900,straight_acceleration=900)
      chassis.straight(280)
      chassis.settings(straight_speed=400,straight_acceleration=350)
-     chassis.straight(-260)
+     chassis.straight(-205)
      #moving
      chassis.turn(33)
      chassis.curve(radius=-500,angle=-30)
      chassis.straight(250)
-     chassis.turn(5)
      #puting dude
+     chassis.turn(12)
      arm_right.run_time(speed=400,time=1500)
+     #pressing 
+     RUN(-80)
+     RUN(140)
+     speed(straight_speed=200,straight_acceleration=200)
+     RUN(-78)
+     speed(500,500)
+
     
 
 
@@ -191,45 +199,23 @@ def run_4():
     chassis.turn(25)
     chassis.straight(-150)
     chassis.turn(-5)
-    chassis.turn(60)
-    RUN(200)
-    # # chassis.settings(150,100)
-    # chassis.straight(-100)
-    # chassis.turn(-10)
-    # chassis.straight(-140,wait=False)
-    # wait(750)
-    # chassis.straight(170)
-    # chassis.turn(60)
-    # chassis.straight(60)
-    # chassis.turn(30)
-    # chassis.straight(150)
-    # chassis.turn(50)
-    # chassis.straight(140)
-    # chassis.turn(-60)
-    # arm_right.run_time(-300,2000)
-    # arm_right.run_time(300,1000,wait=False)
-    # wait(0)
-    # chassis.straight(-300)
-    # chassis.straight(80)
-    # chassis.turn(30)
-    # chassis.straight(160)
-    # chassis.turn(-30)
-    # chassis.turn(60)
-    # chassis.straight(160)
-    # chassis.straight(200)
-    # chassis.turn(50)
-    # chassis.settings(200)
-    # chassis.straight(-120)
-    # # chassis.straight(100)
-    # chassis.settings(1000)
-    # chassis.curve(100,50)
-    # chassis.turn(45)
-    # chassis.straight(260)
-    # chassis.turn(-55)
-    # chassis.straight(75)
-    # arm_right.run_time(-300,2000)
-    # chassis.turn(60)
-    # chassis.straight(-1000)
+    #moving
+    chassis.straight(300)
+    chassis.turn(160)
+    chassis.settings(600,200)
+    chassis.straight(380)
+
+    chassis.turn(-15)
+    chassis.straight(76.533)
+    #pulling rocket
+    chassis.turn(-65)
+    chassis.straight(-100)
+    chassis.straight(230.1)
+    arm_right.run_time(-300,2000)
+    arm_right.run_time(-300,300)
+    chassis.curve(-40,-100)
+
+
 
 
 
@@ -254,9 +240,8 @@ def run_5():
 
 
 def run_9():
-    chassis.settings(100,100)
-    arm_left.run_angle(-2000,-500)
-    chassis.straight(-700)
+    chassis.curve(-40,-60)
+
 
 
 selected = hub_menu("1", "2", "3", "4", "5", "9")
