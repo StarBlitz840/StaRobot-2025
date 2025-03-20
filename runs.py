@@ -35,7 +35,8 @@ colors = (
     Color.WHITE,
     Color.NONE,
 )
-gay = chassis.straight
+gay_or_tomer_YOU_CAN_CALL_IT_WHAT_EVER_YOU_WANT_IT_ACTUALLY_DOSE_NOT_MATTAR_AT_ALL = chassis.curve
+
 
 def run_1():
     #moving 
@@ -182,13 +183,13 @@ def run_4():
 
     #seaweed
     chassis.straight(110)
-    chassis.turn(45)
+    chassis.turn(50)
     chassis.straight(-250)
     chassis.straight(150)
 
     #shrimp 2
     chassis.settings(200,100)
-    chassis.turn(-10)
+    chassis.turn(-15)
     chassis.straight(-150)
     chassis.turn(-5)
     chassis.settings(1000,1000)
@@ -199,10 +200,11 @@ def run_4():
 
     #shrimp 3
     chassis.turn(25)
-    chassis.straight(-150)
-    chassis.turn(-5)
-    chassis.turn(60)
-    gay(200)
+    chassis.settings(700,1000)
+    chassis.straight(-170)
+    # chassis.curve()
+    # chassis.turn(60)
+    # gay(200)
     # # chassis.settings(150,100)
     # chassis.straight(-100)
     # chassis.turn(-10)
@@ -244,26 +246,20 @@ def run_4():
 
 
 def run_5():
-    hub.imu.reset_heading(0)
-    chassis.straight(-400)
-    chassis.turn(20)
-    chassis.straight(-300)
-    chassis.turn(-40)
-    chassis.straight(-300)
-    chassis.turn(60)
-    chassis.straight(-200)
-    chassis.turn(25)
-    chassis.settings(200,200)
-    chassis.straight(-250)
-    chassis.straight(500)
-    chassis.turn(-90)
-
+   chassis.settings(400,400) 
+   chassis.straight(400)
+   chassis.straight(-300)
+   chassis.turn(50)
+   chassis.straight(500)
+   chassis.turn(62)
+   chassis.straight(420)
+   arm_left.run_angle(500,-70)
+   
 
 
 def run_9():
-    chassis.settings(100,100)
-    arm_left.run_angle(-2000,-500)
-    chassis.straight(-700)
+    chassis.settings(1000,1000)
+    chassis.straight(-100000)
 
 
 selected = hub_menu("1", "2", "3", "4", "5", "9")
